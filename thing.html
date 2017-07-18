@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>super-garden-foods</title>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="super-garden-foods by 2097917" />
+    <meta property="og:image" content="https://igappblobs.azureedge.net/users/2097917/2428678/apple-touch-icon-precomposed.png?v=2" />
+    <meta property="og:url" content="https://app.igenapps.com/2428678" />
+    <meta property="og:description" content="Check out this App &#64;iGenApps" />
+    <meta name="theme-color" content="#66B032">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#66B032">
+    <meta name="appiconurlpath" content="https://igappblobs.azureedge.net/users/2097917/2428678">
+    
+    <script>
+        var nav = navigator;
+        if ('serviceWorker' in nav) {
+            console.log('Service Worker is supported');
+            nav.serviceWorker.register('/swoffline.js').then(function (reg) {
+                console.log(':^)', reg);
+            
+            }).catch(function (error) {
+                console.log(':^(', error);
+            });
+        }
+        var ios7 = nav.userAgent.match(/(iPad|iPhone|iPod touch);.*CPU.*OS 7_\d/i);
+        var ios8 = nav.userAgent.match(/(iPad|iPhone|iPod touch);.*CPU.*OS 8_\d/i);
+        if (ios7 || ios8) {
+            document.write('<link href="https://kendo.cdn.telerik.com/2017.1.118/styles/kendo.mobile.common.min.css" rel="stylesheet" />');
+        }
+        function NoSplash() {
+            console.log('splash issue')
+            document.getElementById("splash-screen").style.display = "none";
+        }
+    </script>
+    <link rel="stylesheet" type="text/css" href="https://igserviceaka.azureedge.net/app/style?usercolor=%2366B032&v=7108a11c-002b-43e3-a672-078c5a1e3deb" />
+        <link rel="manifest" href="https://app.igenapps.com/manifest?user=2097917&app=super-garden-foods&secure=False&version=2&c=%2366B032&title=SGF&appid=2428678&userid=2097917">
+</head>
+<body>
+    <noscript>
+        <p>Please enable JavaScript to access this App.</p>
+    </noscript>
+    <div id="splash-screen" class="user-color-background">
+        <img id="splash-icon" src="https://igappblobs.azureedge.net/users/2097917/2428678/apple-touch-icon-precomposed.png?v=2" alt="icon-splash" onerror="NoSplash()" style="position:relative;left: 33.3%;width:33.3%;">
+    </div>
+    
+<div data-id="iGenAppsAdd2Home" data-role="layout"></div>
+<div data-role="view" data-title="" id="index" data-layout="iGenAppsAdd2Home" data-init="ShowAdd2Home">
+
+    <div data-role="content" id="a2h-content">
+
+    </div>
+
+    
+
+<div id="a2h-modal-background"></div>
+    <div id="a2h-modal-menu-pointer">
+        <span class="icon-stack icon-lg">
+            <i class="icon icon-angle-up icon-stack" style="font-size:1.5em"></i>
+            <i class="icon icon-more-vert icon-stack" style="font-size:1.5em;margin-top:-1.8em"></i>
+        </span>
+    </div>
+    <div id="a2h-modal-content">
+        <img id="a2h-android-img-prompt" src="" />
+        <img id="a2h-android-img" src="" />
+
+    </div>
+
+    
+<div id="a2h-modal-background"></div>
+<div id="ios-modal-menu-pointer">
+   
+    <i id="icon1" class="icon icon-normanortiz-action icon-2x"></i>
+    <i id="icon2" class="icon icon-angle-down icon-3x"></i>
+</div>
+<div id="ios-modal-content">
+    
+   
+    <img id="a2h-ios-img-popup" />
+    <div id="a2h-ios-img" >
+        <div id="ios-inner-top" class="ios-inner">&nbsp;</div>
+        <img id="a2h-ios-img-inner" />
+        <div id="ios-inner-bottom" class="ios-inner">&nbsp;</div>
+    </div>
+   
+</div>
+
+</div>
+
+<script type="text/x-kendo-template" id="ioscontent">
+    <div id="a2hios" class="a2h">
+
+        <div id="icon-profile">
+            <a id="installios" data-role="button" data-localize="ios.install">GET</a>
+            <a id="open-ios" data-role="button" data-icon="details" href="\#0" data-localize="ios.open">OPEN</a><br />
+            <h2>
+                #=name#<br />
+                <small>#=by#</small>&nbsp;<img id="ios-cname" height="8" src="" />
+
+
+            </h2>
+
+            <img id="ios-ratings" src="" />
+            #if (icon) {#
+              <img id="iconimg" src="https://igappblobs.azureedge.net/users/2097917/2428678/apple-touch-icon-precomposed.png?v=#=ver#" onerror="">
+           #} else {#
+             <img id="iconimg" src="https://igstatic.azureedge.net/users/mobile/site/apple-touch-icon-precomposed.png?v=#=ver#">
+            #}#
+
+        </div>
+        <div style="clear:both;"></div>
+        <div id="Description-profile" style="margin-top:0;">
+            <h2 data-localize="description">Description</h2>
+            <p>
+                #=desc#
+            </p>
+        </div>
+        <div id="line"></div>
+        <div id="Inline2-profile">
+            <h2 data-localize="ios.information">Information</h2>
+            <p>
+                <table style="margin-left:42px;margin-top:-10px;">
+                    <tr>
+                        <td align="right" style="color:darkgray">
+                            <small><span data-localize="ios.category">Category</span></small>
+                        </td>
+                        <td style="padding-left:15px">
+                            <small><span>#=cat#</span></small>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right" style="color:darkgray">
+                            <small><span data-localize="ios.updated">Updated</span></small>
+                        </td>
+                        <td style="padding-left:15px">
+                            <small><span>#=created#</span></small>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right" style="color:darkgray">
+                            <small><span data-localize="version">Version</span></small>
+                        <td style="padding-left:15px">
+                            <small><span>#=ver#.0</span></small>
+                        </td>
+                    </tr>
+                </table>
+            </p>
+
+        </div>
+
+    </div>
+</script>
+<script type="text/x-kendo-template" id="androidcontent">
+
+    #var catimg = 'bu'; if(typeof(catid)!='undefined'){catimg=catid};#
+    <div id="a2handroid" class="a2h">
+        <div style="background-color: \#fff;">
+            <img id="android-img-cat" height="195" src="https://igstatic.azureedge.net/public/a2h/#=catimg#.jpg"  />
+            
+        </div>
+        <div style="height:75px">
+            #if (icon){#
+            <img class="android-icon" src="https://igappblobs.azureedge.net/users/2097917/2428678/Icon-144x144.png?v=#=ver#" onerror="A2HimhError(this)" />
+            #} else {#
+            <img class="android-icon" src="https://igstatic.azureedge.net/users/mobile/site/Icon-144x144.png?v=#=ver#" />
+            #}#
+
+            <img src="https://igstatic.azureedge.net/public/a2h/icon.png" style="float:right;margin:20px" width="17"/>
+            <div class="android-header">
+                <h2 style="color:\#3a3a3a">#=name#</h2>
+                <p style="color:\#919191">#=by#</p>
+            </div>
+          </div>
+        <div style="clear:both;"></div>
+        <div class="android-description-head" style="height:50px;text-align:center">
+            <a id="install-android" data-role="button" style="float:right;background-color:\#689f38;margin: 0px 10px 10px 10px; color: \#fff;" data-localize="android.install">Install</a>
+            <a id="open-chrome" data-rel="external" src="intent://#=window.location.hostname + window.location.pathname#\#Intent;scheme=http;package=com.android.chrome;end" data-role="button" style="float:right;background-color:\#689f38;margin: 0px 10px 10px 10px; color: \#fff;" data-localize="android.openchrome">Open in Chrome</a>
+        </div>
+        <div style="clear:both;"></div>
+      <hr style="color:\#919191;margin:10px" />
+       
+        <div class="android-footer" style="text-align:center; height:80px">
+
+            <img src="https://igstatic.azureedge.net/public/a2h/badges1.png" />
+            <img src="https://igstatic.azureedge.net/public/a2h/badges2.png" />
+            <img src="https://igstatic.azureedge.net/public/a2h/badges3.png" />
+            <img src="https://igstatic.azureedge.net/public/a2h/badges4.png" />           
+            
+        </div>
+        <hr style="color:\#919191;margin:10px" />
+        <div class="android-description">
+            
+            <p style="color:\#7a7a7a">#=desc#</p>
+        </div>
+
+     
+
+       
+    </div>
+</script>
+<script type="text/x-kendo-template" id="wpcontent">
+    <div id="a2hwp" class="a2h black">
+
+        <div style="width:100%;position:relative;margin-left:auto;margin-right:auto;text-align:center;background-color:\#000">
+            #if (icon){#
+
+                <img style="width: 100%; margin: 0px; padding: 0px; margin-bottom: 10px;border:none" src="https://igappblobs.azureedge.net/users/2097917/2428678/apple-touch-icon-precomposed.png?v=#=ver#" onerror="A2HimhErrorPre(this)" />
+            #} else {#
+                <img style="width: 100%; margin:0px;padding:0px;margin-bottom:10px; border: none" src="http://igenappsfiles.azureedge.net/users/sample/igenappsdemo/apple-touch-icon-precomposed.png?v=#=ver#" />
+            #}#
+
+        </div>
+
+        <div id="wppinit">
+
+            <img src="//az611828.vo.msecnd.net/public/templatedata/images/wppinit-updated.png" />
+
+        </div>
+
+    </div>
+</script>
+
+
+    <script>
+        if (window.location.href.indexOf("#index") > -1) {
+            window.location.hash = 0;
+            indexload = true;
+            var iconwidth = screen.width * 0.33;
+            var icontop =(( screen.height / 2 ) - (iconwidth/2)) - 40
+            document.getElementById("splash-icon").style.top = icontop + "px";
+            document.getElementById("splash-screen").style.display = "block";
+        }
+        function getURLParameter(name) {
+            return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [, ""])[1].replace(/\+/g, '%20')) || "kendo";
+        }
+    </script>
+    
+
+ <script> var adclient = null; var adslot = null; </script><div data-id="iGenAppsA2H" data-role="layout"></div><div data-id="iGenApps" data-role="layout" data-show="triggerIndexButton" data-init="triggerInit" data-hide="triggerHide"><header data-role="header"><div data-role="navbar" class="usercolor"><a id="back-button" data-align="left" data-role="backbutton" data-transition="slide:right">Back</a><span data-role="view-title"></span><a id="open-url-button" data-align="right" data-role="button" data-rel="external" href="" target="_blank" data-click="OpenExternal" style="display:none"><span class="km-icon km-igfont" data-val=""></span><span class="km-text" style="border-right:none"></span></a><a id="share-drawer-button" data-align="right" data-role="button" href="#share-drawer" data-rel="drawer" data-views="['About']"><span class="icon icon-share-compact"></span><span class="km-text" style="border-right:none"></span></a></div><div id="viewloader" class="viewloading user-color-background"><div class="viewloader"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div></div></header></div><style type="text/css"> .km-content. { background:center no-repeat url(); background-size: cover; } </style><link rel="icon" type="image/png" href="https://igappblobs.azureedge.net/users/2097917/2428678/Icon-72x72.png?v=2"><link rel="apple-touch-icon" href="https://igappblobs.azureedge.net/users/2097917/2428678/apple-touch-icon-precomposed.png?v=2" /><div data-role="drawer" id="share-drawer" data-stretch="false" data-position="right" data-init="ShareDrawerInit" data-swipe-to-open="false"><p><a href="#About" data-transition="none"><span style="font-size:1.7em;margin-bottom:5px;" class="icon km-icon km-kfont icon-center" data-val=""></span></a><div id="share-links"></div></p></div><div data-role="view" data-title="SGF" id="0" data-layout="iGenApps" data-compiled="false" data-show="ScaleIcons" data-use-native-scolling="true"><div data-role="content" class="button_menu background" style="padding:0px;margin:0px;"><br /><div class="button"><a data-role="button" data-rel="external" href="javascript:kendoMobileApplication.navigate('#1')" data-id="1"><span class="icon km-icon km-iggeneral" data-val=""></span><div class="text">Logo</div></a></div><div class="button"><a data-role="button"  href="https://docs.google.com/forms/u/0/d/e/1FAIpQLScfEEkISQj-ES7HPvckPnK0izuvNPXeHp30fkcf4hK1m11BUg/viewform?usp=sf_link"><span class="icon km-icon km-iggeneral" data-val=""></span><div class="text">Order</div></a></div></div><style scoped> .button_menu .button { display:inline-block; margin:11.4px; text-align:center; width:81px; vertical-align:top; } .button_menu .button a{ text-decoration:none; border:none; box-shadow:none; text-align:center!important; background:transparent; } .button_menu .button a.km-state-active{ border:none; box-shadow:none!important; -webkit-filter: brightness(1.1); -moz-filter: brightness(1.1); -ms-filter: brightness(1.1); filter: brightness(1.1); } .button_menu .icon { font-size: 3em; border: none; color: #66B032; text-align:center!important; margin:0; width:1.6em; } .button_menu .icon:before { text-align: center; vertical-align:top; } .button_menu .icon:after { text-align: center; vertical-align:top; } .button-menu .km-icon:after { vertical-align:top; text-align: center; } .button_menu .text { margin-top: 5px; font-size:12px!important; align-content:center; text-align:center; height:30px; text-transform:none; font-weight:normal; } </style></div><div data-role="view" id="1" data-title="Logo" data-init="ImageSingleLoad" data-show="No" data-hide="No" data-before-show="No" data-before-hide="No" data-layout="iGenApps" data-compiled="false" data-zoom="false" data-stretch="false" data-result="{&quot;source&quot;:{&quot;url&quot;:&quot;https://igappblobs.azureedge.net/users/2097917/2428678/18cf6e48-9f5c-4a36-9740-81f875e4d4a8-767x1022.jpg&quot;},&quot;thumbnails&quot;:{&quot;thumb160&quot;:null}}" data-search="false" data-use-native-scrolling="false" data-template="image_single"><div data-role="content" class="image-single-container"><img id="SingleImage1" class="image-single" src="" style="display: none" /></div></div><div data-role="view" data-title="&nbsp;" id="About" data-show="CheckDrawer" data-hide="ShowDrawer" data-layout="iGenApps" data-compiled="false"><div data-role="content"><div id="icon-image"></div><div id="icon-container"><img id="app-icon" src="https://igappblobs.azureedge.net/users/2097917/2428678/apple-touch-icon-precomposed.png?v=2" onerror="SetAboutImage(this)" /><div class="appinfo"><h4 class="appname">SGF</h4><p> Super Garden Foods<br /><strong>2</strong></p></div></div><div id="logo-image"></div></div><style scoped> #About #icon-container{ text-align:center; } #About #app-icon { width:200px; height: 200px; position: relative; top:-100px; -webkit-border-radius: 12px; border-radius: 12px; } #About .appinfo{ margin-top:-85px; text-align:center; } #About .appinfo p{ color:#66B032; } #About #icon-image { text-align: center; font-size: 1.5em; font-weight: bold; background-color: #66B032; height:225px; } #About #logo-image img { width: 200px; height: 60px; position:relative; bottom:0px; text-align: center; margin-left:auto; margin-right:auto; } #About #logo-image { position:relative; background-color: #66B032; width: 200px; height: 54px; -webkit-mask-image: url('https://igstatic.azureedge.net/public/website/logoblacktrans200.png'); margin-left:auto; margin-right:auto; margin-top:10%; } #About .appname { margin: 5px; color:#2d2d2d; font-size:2em; background-color:transparent ; padding-bottom: 5px; } @media only screen and (min-device-width: 375px) { #About #logo-image { margin-top:30%; } } @media only screen and (min-device-width: 414px) { #About #logo-image { margin-top:40%; } } </style><script> function CheckDrawer(e) { var drawercheck = $("#app-drawer").attr("id"); if (drawercheck == undefined) { e.view.header.find("#share-drawer-button").css({ display: "none" }); $("#share-drawer").data("kendoMobileDrawer").hide(); } } function ShowDrawer(e) { var drawercheck = $("#app-drawer").attr("id"); if (drawercheck == undefined) { e.view.header.find("#share-drawer-button").css({ display: "" }); } } function SetAboutImage(img) { img.onerror = ""; img.src = "https://igstatic.azureedge.net/users/mobile/site/apple-touch-icon-precomposed.png"; return true; } </script></div><div data-role="view" data-title="www" id="iframext" data-init="InitiFrame" data-show="LoadUrliFrameDirect" data-hide="HideIframe" data-layout="iGenApps" data-compiled="false" data-stretch="false" data-zoom="false" data-use-native-scrolling="false"><div data-role="content" id="iframext-content" style="overflow:auto!important;-webkit-overflow-scrolling: touch;"></div></div><script type="text/javascript"> var userAppGuid="4337752a-79f1-4c9f-b179-f239b4b12779",UseUpdatedLayout=!0,osPlatform=decodeURIComponent((new RegExp("[?|&]platform=([^&;]+?)(&|#|;|$)").exec(location.search)||[,""])[1].replace(/\+/g,"%20"))||"kendo",notificationActive=!1,a2hActive=!1,appName="users/2097917/super-garden-foods",appDisplayName="SGF",iconName="SGF",appTitle="SGF",menuType="grid",userAppVersion="2",userColor="#66B032",appURL="https://app.igenapps.com/2428678",hasSplash=!1,fontsNeeded=["general",""],appLanuage="Select a Language",dataSeparated=!0,appId=2428678,iGenApp=[{name:appDisplayName,by:"Super Garden Foods",desc:"This is the app that makes pre-ordering Super Garden Foods easy.",cat:"Business",catid:"bu",created:"Jul 18, 2017 ",ver:userAppVersion,uapp:appName,icon:!0,blob:!0}] </script><div data-role="modalview" id="NotifyView" style="width: 200px; height: 150px"><h4 id="nmessage"></h4><a data-role="button" class="modalview-button" data-click="closeModal">Close</a></div><style type="text/css" data-date-published="7/18/2017 1:35:26 AM"> .image-single{vertical-align:middle;text-align:center;min-width:100%;max-width:100%}.image-single-container .spinner{margin-left:-30px;width:65px}.image-single-container .spinner>div:not(:first-of-type){margin-left:6px}.image-single-container .lazy-load-image{height:100%}.image-single-container .spinner>div{width:10px;height:10px} </style><script type="text/javascript"> function ImageSingleLoad(n){var t=n.view.element.attr("id"),i="div[data-role=view][id="+t+"] div[data-role=content]",u=JSON.parse($("div#"+t).attr("data-result")),r=!1,f;setTimeout(function(){r||(showLoaderEl(i),$(i+" .spinner div").css("background-color",userColor))},50);u.source.url?(f=SetCDNImage(u.source.url),$("#"+t+" .image-single").attr("src",f),$("#"+t+" .image-single").load(function(){r=!0;$("#"+t+" .image-single").fadeIn(0);hideLoaderEl(i)})):(r=!0,hideLoaderEl(i))} </script>
+
+    <script type="text/javascript" src="https://igserviceaka.azureedge.net/bundle/require.min.js?v=7108a11c-002b-43e3-a672-078c5a1e3deb"></script>
+    <script type="text/javascript">
+        var secure =  false;
+
+        require.config({
+            skipDataMain: true,
+            enforceDefine: false,
+            waitSeconds : 0,
+            paths: {
+                'jquery': 'https://kendo.cdn.telerik.com/2017.1.118/js/jquery.min',
+                'kendo.mobile.min':'https://kendo.cdn.telerik.com/2017.1.118/js/kendo.mobile.min',
+                'igenappjsa2hmaterial':'https://igserviceaka.azureedge.net/bundle/igscript4.0.min.js?v=7108a11c-002b-43e3-a672-078c5a1e3deb',
+            },
+            shim:{
+                'igenappjsa2hmaterial': {
+                    deps: ['jquery','kendo.mobile.min']
+                }
+            }
+        });
+        var Fontbase = 'https://use.fortawesome.com/';
+        require([Fontbase + '06e699e1.js']);
+        if(typeof(fontsNeeded) != "undefined"){
+            var FontPaths = [{f:"business",u:"7fae2a24"},{f:"food",u:"f9636f27"},{f:"fun",u:"24b2ce2b"},{f:"health-fitness",u:"ededacae"},{f:"home",u:"740190b0"},{f:"location-weather",u:"ae01d74c"},{f:"media",u:"9e7ed6fd"},{f:"misc",u:"3739adb5"},{f:"transportation",u:"e17b0989"},{f:"general",u:"f28fdff0"},{f:"general2",u:"f28fdff0"}];
+            for(i = 0; i < FontPaths.length; i++) {
+                if(fontsNeeded.indexOf(FontPaths[i].f) > -1){
+                    require([Fontbase + FontPaths[i].u +'.js']);
+                }
+            }
+        }else{
+            require([Fontbase +'4fd18528.js']);
+        }
+        require([ "jquery", "kendo.mobile.min" ], function($, kendo) {
+            console.log(kendo)
+            if(!secure){
+                if (!kendo.support.mobileOS && window.location.href.indexOf("#0") == -1 && window.location.href.indexOf("nopcview") == -1) {
+                    var DefaultUrl = '';
+                    console.log('PC');
+                    if (DefaultUrl.length > 0) {
+                        return document.location = "https://app.igenapps.com/pc/2428678";
+                    } else {
+                        return document.location = "/pc/2428678";
+                    }
+                }
+            }
+            console.log('no PC');
+
+          
+            require(['igenappjsa2hmaterial'],function(igenappjsa2hmaterial){
+                if (kendo.support.mobileOS) {
+                    if (kendo.support.mobileOS.android) {
+                        if(localStor){
+                            console.log(localStorage['ServerCached2428678']);
+                            if(localStorage.getItem('ServerCached2428678') == undefined){
+                                setTimeout(function(){
+                                    console.log('trigger servicejob install');
+                                    $('body').append('<iframe src="/App/Offline?UserAppGuid='+ userAppGuid +'&UserColor=%2366B032&Query=" style="display:none"/>');
+                                },3000);
+                                localStorage.setItem("ServerCached2428678", "true");
+                            }
+                        }
+                    }
+                    var phid = getURLParameter("native");
+                    var push = "";
+                    if(phid == "kendo"){
+                        phid = getURLParameter("nativepush");
+                        if(phid >0){
+                            push="push";
+                        }
+                    }
+                    if(phid > 0){
+                        console.log('Phonegap' + phid);
+                        if (kendo.support.mobileOS.ios) {
+                            console.log('ph ios')
+                            require(['https://igserviceaka.azureedge.net/bundles/igeniospg'+ push + phid],function(){
+                                require(['https://igappfiles.azureedge.net/public/ipa/events'+ phid +'.js']);
+                                if(push){
+                                    console.log('push enabled')
+                                    require(['https://igappfiles.azureedge.net/public/push/2428678.js?v=2'])
+                                }
+                            });
+                        }
+                        if (kendo.support.mobileOS.android) {
+                            console.log('ph android')
+                            require(['https://igserviceaka.azureedge.net/bundles/igenandroidpg'+ push + phid],function(){
+                                require(['https://igappfiles.azureedge.net/public/apk/events'+ phid +'.js']);
+                                if(push){
+                                    console.log('push enabled')
+                                    require(['https://igappfiles.azureedge.net/public/push/2428678.js?v=2'])
+                                }
+                            });
+                        }
+                    }
+                    LogAppViewID('2428678', 'https://app.igenapps.com/2428678');
+                    (function (i, s, o, g, r, a, m) {
+                        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                            (i[r].q = i[r].q || []).push(arguments)
+                        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+                    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+                    ga('create', 'UA-15270735-1', 'auto');
+                    ga('send', 'pageview');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
